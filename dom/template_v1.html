@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!--div#app-->
+<div id="app">
+    <p v-once>{{ title }}</p>
+    <p>{{ welcome() }}</p>
+    <a :href="link">Google</a> <!--  ":"  é o mesmo que "v-bind:" -->
+    <hr>
+    <p> {{ linkhtml }}</p>
+    <p v-html="linkhtml"></p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Diretiva v-once!',
+            link: 'http://google.com.br',
+            linkhtml: '<a href="http://google.com.br"> Diretiva v-html</a>'
+        },
+        methods: {
+            welcome() {
+                this.title = ' Sem a diretiva v-once, Bom dia!!'
+                return this.title;
+            }
+        }
+    });
+</script>
