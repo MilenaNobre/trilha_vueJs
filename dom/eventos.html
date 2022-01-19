@@ -2,9 +2,18 @@
 <!--div#app-->
 <div id="app">
     <p>{{ contador }}</p>
-    <button v-on:click="somar">
+    <button v-on:click="somar(5, $event)">
         Somar 1
     </button>
+    <p v-on:mousemove="atualizaXY">
+        Mouse: {{ x }} - {{ y }}
+        <span v-on:mousemove.stop=""> PARAR AQUI!!! </span>
+    </p>
+    <a v-on:click.prevent="" href="http://google.com"> Google </a>
+<hr>
+    <input type="text" v-on:keyup.down="mostrarTecla">
+    <p>click keyupdown: {{ tecla }} - {{ contador2}}</p>
+
 </div>
 
 <script>
@@ -12,10 +21,23 @@
         el: '#app',
         data: {
             contador: 0,
+            contador2: 0,
+            x: 0,
+            y: 0,
+            tecla: ''
         },
         methods: {
-            somar() {
-                return this.contador++;
+            somar(incremento, ev) {
+                console.log(ev)
+                return this.contador += incremento;
+            },
+            atualizaXY(event) {
+                this.x = event.clientX
+                this.y = event.clientY
+            },
+            mostrarTecla(event) {
+                this.contador2++;
+                this.tecla = event.code
             }
         }
     });
