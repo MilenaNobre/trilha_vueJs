@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Condicionais e  Listas</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(cor, index) in cores" :key="cor">{{ ++index }})  {{ cor }}</li>
+    </ul>
+    <button @click="cores.push('branca')">Adicionar</button>
+    <hr>
+    <template v-for="(cor, index) in cores">
+        <h3> {{ index }}</h3>
+        <p>{{ cor }}</p>
+    </template>
+    <hr>
+    <ul>
+        <li v-for="pessoa in pessoas">
+            <div v-for="(valor, chave, index) in pessoa"> {{ ++index }} - {{ chave }} - {{ valor }}</div>
+        </li>
+    </ul>
+    <hr>
+    <span v-for="n in 10"> {{ n }}</span>
+</div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            cores:['vermelho', 'verde', 'amarelo', 'azul'],
+            pessoas: [
+                {nome: 'Milena', idade: 24, peso:89},
+                {nome: 'Ana', idade: 29, peso:59},
+                {nome: 'Lucas', idade: 26, peso:70},
+            ]
+        }
+    });
+</script>
+<style>
+    ul {
+        list-style: none;
+    }
+    h3, p {
+        display: inline;
+    }
+</style>
+</html>

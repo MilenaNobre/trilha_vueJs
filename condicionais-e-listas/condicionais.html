@@ -7,11 +7,18 @@
 </head>
 <body>
     <div id="app">
-        <p v-if="logado">Usuário Logado: {{ userLogado }}</p>
+        <template v-if="logado">
+            <p>Usuário Logado: {{ userLogado }}</p>
+            <p>Perfil: Admin</p>
+        </template>
         <p v-else-if="anonimo">Navegando como anônimo</p>
         <p v-else>Nenhum Usuário Logado!</p>
         <button @click="logado =  !logado"> {{ logado ? 'Sair' : 'Entrar'}}</button>
         <input type="checkbox" v-model="anonimo"> Anônimo
+        <hr>
+        <footer v-show="logado">
+            Desenvolvido para você!
+        </footer>
     </div>
 </body>
 <script>
