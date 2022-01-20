@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Condicionais e  Listas</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="logado">Usuário Logado: {{ userLogado }}</p>
+        <p v-else>Nenhum Usuário Logado!</p>
+        <button @click="logado =  !logado"> {{ logado ? 'Sair' : 'Entrar'}}</button>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            userLogado: 'Milena Nobre',
+            logado: false
+        }
+    });
+</script>
+</html>
