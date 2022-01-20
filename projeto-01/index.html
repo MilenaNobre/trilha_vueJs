@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matador de Monstro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="panel scores">
+            <div class="score">
+                <h1>Jogador</h1>
+                <div class="life-bar">
+                    <div :class="classPlay" :style="{width: `${widthPlay}%`}"></div>
+                </div>
+                <div> {{ `${widthPlay}%` }}</div>
+            </div>
+            <div class="score">
+                <h1>Monstro</h1>
+                <div class="life-bar">
+                    <div :class="classMonster" :style="{width: `${widthMonster}%`}"></div>
+                </div>
+                <div>{{ `${widthMonster}%` }} </div>
+            </div>
+        </div>
+        <div v-if="result" class="panel result">
+            <div v-if="win" class="win">Você ganhou!!! :)</div>
+            <div v-else class="lose">Você perdeu! :(</div>
+        </div>
+        <div class="panel buttons">
+            <template v-if="start">
+                <button class="btn attack" @click="attack(false)">Ataque</button>
+                <button class="btn especial-attack" @click="attack(true)">Ataque Especial</button>
+                <button class="btn heal" @click="heal">Curar</button>
+                <button class="btn give-up" @click="start = !start">Desistir</button>
+            </template>
+            <button v-else-if="restart" class="btn new-game" @click="clear">Reiniciar Jogo</button>
+            <button v-else class="btn new-game" @click="start = !start">Iniciar Jogo</button>
+        </div>
+        <div class="panel logs" v-if="arrLog.length > 0">
+            <ul>
+                 <li v-for="(log, index) in arrLog" :key="index" :class="log.class"> {{ log.log }}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
