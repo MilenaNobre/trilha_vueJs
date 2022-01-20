@@ -12,24 +12,24 @@
             <h1> Matador de Monstro </h1>
             <p>Projeto #01 </p>
         </div>
-        <div class="panel scores">
+        <div class="panel scores" >
             <div class="score">
                 <h1>Jogador</h1>
                 <div class="life-bar">
-                    <div :class="classPlay" :style="{width: `${widthPlay}%`}"></div>
+                    <div class="life" :class="{danger: widthPlay < 20 }" :style="{width: `${widthPlay}%`}"></div>
                 </div>
                 <div> {{ `${widthPlay}%` }}</div>
             </div>
             <div class="score">
                 <h1>Monstro</h1>
                 <div class="life-bar">
-                    <div :class="classMonster" :style="{width: `${widthMonster}%`}"></div>
+                    <div class="life" :class="{danger: widthMonster < 20 }":style="{width: `${widthMonster}%`}"></div>
                 </div>
                 <div>{{ `${widthMonster}%` }} </div>
             </div>
         </div>
-        <div v-if="result" class="panel result">
-            <div v-if="win" class="win">Você ganhou!!! :)</div>
+        <div v-if="hasResult" class="panel result">
+            <div v-if="widthMonster === 0" class="win">Você ganhou!!! :)</div>
             <div v-else class="lose">Você perdeu! :(</div>
         </div>
         <div class="panel buttons">
@@ -37,14 +37,14 @@
                 <button class="btn attack" @click="attack(false)">Ataque</button>
                 <button class="btn especial-attack" @click="attack(true)">Ataque Especial</button>
                 <button class="btn heal" @click="heal">Curar</button>
-                <button class="btn give-up" @click="start = !start">Desistir</button>
+                <button class="btn give-up" @click="clear">Desistir</button>
             </template>
-            <button v-else-if="restart" class="btn new-game" @click="clear">Reiniciar Jogo</button>
+            <button v-else-if="hasResult" class="btn new-game" @click="clear">Reiniciar Jogo</button>
             <button v-else class="btn new-game" @click="start = !start">Iniciar Jogo</button>
         </div>
-        <div class="panel logs" v-if="arrLog.length > 0">
+        <div class="panel logs" v-if="arrLog.length">
             <ul>
-                 <li v-for="(log, index) in arrLog" :key="index" :class="log.class"> {{ log.log }}</li>
+                 <li v-for="(log, index) in arrLog" :key="index" :class="log.cls"> {{ log.log }}</li>
             </ul>
         </div>
     </div>
