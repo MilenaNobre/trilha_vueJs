@@ -13,7 +13,9 @@ Proveitos do curso:
 
     * PROJETOS E EXERCÍCIOS
         Projeto #01 : Básico, interaçãoa com template
+                Assuntos abordados: Estrutura condicional, estrutura de repetição, eventos, binding, diretivas
         Projeto #02 : Componentes
+                Assuntos abordados: Slot, keep Alive, emit, props, component
         Projeto #03 : Animações
         Projeto #04 : Rotas e gerenciamento de estado
         Projeto #05 : Projeto Final
