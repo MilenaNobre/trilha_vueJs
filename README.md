@@ -4,10 +4,10 @@
 
 ### Proveitos do curso
    <ul> <strong> O QUE IREI APRENDER </strong>
-        <li> Iniciando com VueJs </li>
-        <li> Interagindo com a DOM(Templates) </li>
-        <li> Entendendo a instância VueJs </li>
-        <li> Formulários </li>
+        <li> Iniciando com VueJs :white_check_mark:</li>
+        <li> Interagindo com a DOM(Templates) :white_check_mark:</li>
+        <li> Entendendo a instância VueJs :white_check_mark:</li>
+        <li> Formulários :white_check_mark:</li>
         <li> Diretivas, filtros e mixins </li>
         <li> Animações e Transições </li>
         <li> Trabalhando com HTTP (axios) </li>
@@ -17,7 +17,7 @@
 </ul>
 <ul> <strong> PROJETOS </strong>
         <li> Projeto #01 - Básico, interaçãoa com template: Estrutura condicional, estrutura de repetição, eventos, binding, diretivas :white_check_mark: </li>
-        <li> Projeto #02 - Componentes: Slot, keep Alive, emit, props, component </li> 
+        <li> Projeto #02 - Componentes: Slot, keep Alive, emit, props, component :white_check_mark: </li> 
         <li> Projeto #03 - Animações (pendente) </li>
         <li> Projeto #04 - Rotas e gerenciamento de estado (pendente) </li>
         <li> Projeto #05 - Projeto Final (pendente)  </li>
