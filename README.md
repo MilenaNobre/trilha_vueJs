@@ -8,9 +8,9 @@
         <li> Interagindo com a DOM(Templates) :white_check_mark:</li>
         <li> Entendendo a instância VueJs :white_check_mark:</li>
         <li> Formulários :white_check_mark:</li>
-        <li> Diretivas, filtros e mixins </li>
-        <li> Animações e Transições </li>
-        <li> Trabalhando com HTTP (axios) </li>
+        <li> Diretivas, filtros e mixins :white_check_mark:</li>
+        <li> Animações e Transições :white_check_mark:</li>
+        <li> Trabalhando com HTTP (axios) :white_check_mark:</li>
         <li> Roteamento </li>
         <li> Gerenciamento de estado(Vuex) </li>
         <li>  Deploying uma APP VueJs </li>
