@@ -16,9 +16,11 @@
         <li>  Deploying uma APP VueJs </li>
 </ul>
 <ul> <strong> PROJETOS </strong>
-        <li> Projeto #01 - Básico, interaçãoa com template: Estrutura condicional, estrutura de repetição, eventos, binding, diretivas :white_check_mark: </li>
-        <li> Projeto #02 - Componentes: Slot, keep Alive, emit, props, component :white_check_mark: </li> 
-        <li> Projeto #03 - Animações  :white_check_mark: </li>
-        <li> Projeto #04 - Rotas e gerenciamento de estado (pendente) </li>
-        <li> Projeto #05 - Projeto Final (pendente)  </li>
+        <li> Projeto #01 - O Matador de Monstros :white_check_mark: </li>
+        <li> Projeto #02 - Tarefas(TODO) :white_check_mark: </li> 
+        <li> Projeto #03 - The Stock Trader  :white_check_mark: </li>
+        <li> Projeto #04 - Calculadora simples :white_check_mark:  </li>
+        <li> Projeto #05 - Problema monty Hall (pendente)  </li>
+        <li> Projeto #06 - Base de conhecimento - backend (pendente)  </li>
+        <li> Projeto #07 - Base de conhecimento - frontend (pendente)  </li>
 </ul>
