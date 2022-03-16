@@ -14,6 +14,10 @@
         <li> Roteamento  :white_check_mark:</li>
         <li> Gerenciamento de estado(Vuex) :white_check_mark: </li>
         <li>  Deploying uma APP VueJs </li>
+        <li>  Bônus: Css Grid e Flexbox :white_check_mark: </li>       
+        <li>  Bônus: Javascript Essencial :white_check_mark: </li>       
+        <li>  Bônus: HTML Essencial</li>       
+
 </ul>
 <ul> <strong> PROJETOS </strong>
         <li> Projeto #01 - Básico, interaçãoa com template: Estrutura condicional, estrutura de repetição, eventos, binding, diretivas :white_check_mark: </li>
@@ -21,4 +25,5 @@
         <li> Projeto #03 - Animações  :white_check_mark: </li>
         <li> Projeto #04 - Rotas e gerenciamento de estado (pendente) </li>
         <li> Projeto #05 - Projeto Final (pendente)  </li>
+        <li> Projeto #06 - Base de Conhecimento  </li>
 </ul>
