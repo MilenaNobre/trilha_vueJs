@@ -20,10 +20,11 @@
 
 </ul>
 <ul> <strong> PROJETOS </strong>
-        <li> Projeto #01 - Básico, interaçãoa com template: Estrutura condicional, estrutura de repetição, eventos, binding, diretivas :white_check_mark: </li>
-        <li> Projeto #02 - Componentes: Slot, keep Alive, emit, props, component :white_check_mark: </li> 
-        <li> Projeto #03 - Animações  :white_check_mark: </li>
-        <li> Projeto #04 - Rotas e gerenciamento de estado (pendente) </li>
-        <li> Projeto #05 - Projeto Final (pendente)  </li>
-        <li> Projeto #06 - Base de Conhecimento  </li>
+        <li> Projeto #01 - <a href="https://github.com/MilenaNobre/projeto_vue_01" > O Matador de Monstros </a> :white_check_mark: </li>
+        <li> Projeto #02 - <a href="https://github.com/MilenaNobre/projeto_vue_02">Tarefas (TODO LIST) </a> :white_check_mark: </li> 
+        <li> Projeto #03 - <a href="https://github.com/MilenaNobre/projeto_vue_03" >The Stock Trader </a>  :white_check_mark: </li>
+        <li> Projeto #04 - <a href="https://github.com/MilenaNobre/projeto_vue_04" > Calculadora simples </a> :white_check_mark:  </li>
+        <li> Projeto #05 - Problema monty Hall (pendente)  </li>
+        <li> Projeto #06 - Base de conhecimento - backend (pendente)  </li>
+        <li> Projeto #07 - Base de conhecimento - frontend (pendente)  </li>
 </ul>
