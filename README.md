@@ -16,10 +16,10 @@
         <li>  Deploying uma APP VueJs </li>
 </ul>
 <ul> <strong> PROJETOS </strong>
-        <li> Projeto #01 - O Matador de Monstros :white_check_mark: </li>
-        <li> Projeto #02 - Tarefas(TODO) :white_check_mark: </li> 
-        <li> Projeto #03 - The Stock Trader  :white_check_mark: </li>
-   <li> Projeto #04 - <a href="https://github.com/MilenaNobre/projeto_vue_04" > Calculadora simples </a> :white_check_mark:  </li>
+        <li> Projeto #01 - <a href="https://github.com/MilenaNobre/projeto_vue_01" > O Matador de Monstros </a> :white_check_mark: </li>
+        <li> Projeto #02 - <a href="https://github.com/MilenaNobre/projeto_vue_02">Tarefas (TODO LIST) </a> :white_check_mark: </li> 
+        <li> Projeto #03 - <a href="https://github.com/MilenaNobre/projeto_vue_03" >The Stock Trader </a>  :white_check_mark: </li>
+        <li> Projeto #04 - <a href="https://github.com/MilenaNobre/projeto_vue_04" > Calculadora simples </a> :white_check_mark:  </li>
         <li> Projeto #05 - Problema monty Hall (pendente)  </li>
         <li> Projeto #06 - Base de conhecimento - backend (pendente)  </li>
         <li> Projeto #07 - Base de conhecimento - frontend (pendente)  </li>
